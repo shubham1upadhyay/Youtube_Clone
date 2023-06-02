@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.menu-icon{
+/* .menu-icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,155 +14,188 @@
 }
 .menu-icon:hover{
     color:red;
-}
-.navbar-brand:hover{
-    cursor: pointer;
-}
+} */
 
-i{
-    font-size: 20px;
-}
 
-/* /* search bar styling */
+
+/* navbar styling */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.searchNav{
+  width:50%;
+}
 .searchBar{
-    width:500px;
-    height:35px;
-    border-radius: 10px;
-    padding: 0px 10px;
+  width:100%;
+  height:35px;
+  border-radius: 10px;
+  padding: 0px 10px;
 }
 #seacrhButton{
-    background-color: white;
-    border: none;
-    /* margin-right: 40px; */
-    position: relative;
-    cursor: pointer;
-
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 #seacrhButton:hover{
-    color: red;
+  background: red;
+  color:white;
+  border-radius: 50%;
 }
 .searchHoverText{
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    color: black; 
-    padding: 5px;
-    border-radius: 4px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s;
+  position: absolute;
+  margin-top: 35px;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black; 
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+  font-weight: 600;
 }
 #seacrhButton:hover .searchHoverText{
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
+}
+i{
+  font-size: 24px;
 }
 
 #micButton{
-    background-color: white;
-    border: none;
-    position: relative;
-    cursor: pointer;
+  background-color: white;
+  border: none;
+  position: relative;
+  cursor: pointer;
 }
 #micButton:hover{
-    color:red;
+  background: red;
+  color:white;
+  border-radius: 50%;
 }
 .micHoverText{
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 50%;
-    width:200px;
-    transform: translateX(-50%);
-    background-color: white;
-    color: black; 
-    padding: 5px;
-    border-radius: 4px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width:200px;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black; 
+  padding: 5px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
 }
 #micButton:hover .micHoverText{
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 #navbarCreateButton{
-    background-color: white;
-    border: none;
-    position: relative;
-    /* margin-right: 20px; */
+  background-color: white;
+  border: none;
+  position: relative;
+  /* margin-right: 20px; */
 }
 .navbarCreateHoverText{
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 50%;
-    width:200px;
-    transform: translateX(-50%);
-    background-color: white;
-    color: black; 
-    padding: 5px;
-    border-radius: 4px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width:200px;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black; 
+  padding: 5px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
 }
 #navbarCreateButton:hover .navbarCreateHoverText{
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
-
+#navbarCreateButton:hover{
+  background: red;
+  color:white;
+  border-radius: 50%;
+}
 #notificationButton{
-    background-color: white;
-    border: none;
-    position: relative;
-    float: right;
-    /* margin-right: 20px; */
+  background-color: white;
+  border: none;
+  position: relative;
+  float: right;
 }
 .notificationHoverText{
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 50%;
-    width:200px;
-    transform: translateX(-50%);
-    background-color: white;
-    color: black; 
-    padding: 5px;
-    border-radius: 4px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width:200px;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black; 
+  padding: 5px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
 }
 #notificationButton:hover .notificationHoverText{
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
+}
+#notificationButton:hover{
+  background: red;
+  color:white;
+  border-radius: 50%;
+}
+.profileImg{
+  background-color: white;
+  border: none;
+  position: relative;
+}
+.profileImgHoverText{
+  position: absolute;
+  top: calc(100% + 15px);
+  margin-left: 10px;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black; 
+  padding: 5px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
+.profileImg:hover .profileImgHoverText{
+  visibility: visible;
+  opacity: 1;
 }
 
-#profileButton{
-    background-color: white;
-    border: none;
-    position: relative;
+.profileImg{
+  width:60px;
+  height:50px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  /* margin-top: -20px; */
+  margin-right:20px;
 }
-.profileButtonHoverText{
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    color: black; 
-    padding: 5px;
-    border-radius: 4px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s;
+.profileImg img{
+width: 50px;
+border-radius: 50%;
 }
-#profileButton:hover .profileButtonHoverText{
-    visibility: visible;
-    opacity: 1;
+
+@media screen and (max-width:768px) {
+  .searchBar{
+      width:90%;
+  }
 }
-#profileButton img{
-    width:7%;
-    border-radius: 50%;
-}
+
+
+
+
 
 
 /* main content styling */
@@ -171,13 +204,26 @@ i{
   
 #videoContainer{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:60px 20px;
-    padding:20px 5px;
-    margin-left: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap:60px 0px;
+    padding:60px 0px;
+    margin-left: 80px;
 }
+@media (max-width: 768px) {
+  #videoContainer{
+    grid-template-columns: 2fr;
+    padding: 0px;
+  }
+  .leftSideBar{
+    display: none;
+  }
+}
+
 #videoContainer > div {
-    height:270px;
+  /* border:1px red solid; */
+  width:380px;
+  height:300px;
+  margin-top: -50px;
 }
 .title{
     font-size: 14px;
@@ -209,110 +255,6 @@ i{
     border-radius: 5px;
     font-size: 10px;
 } */
-  
-.navbar {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top:0px;
-    left:0px;
-  }
-  
-  .navbar-brand a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar-nav li {
-    margin: 0 10px;
-  }
-  
-  .navbar-nav li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .navbar-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-  }
-  
-  .toggle-icon {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    position: relative;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .toggle-icon:before,
-  .toggle-icon:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    position: absolute;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .toggle-icon:before {
-    transform: translateY(-6px);
-  }
-  
-  .toggle-icon:after {
-    transform: translateY(6px);
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-menu {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .navbar-nav {
-      flex-direction: column;
-    }
-    
-    .navbar-nav li {
-      margin: 10px 0;
-    }
-    
-    .navbar-toggle {
-      display: block;
-    }
-    
-    .toggle-icon {
-      background-color: transparent;
-    }
-    
-    .toggle-icon:before {
-      transform: translateY(0) rotate(45deg);
-    }
-    
-    .toggle-icon:after {
-      transform: translateY(0) rotate(-45deg);
-    }
-  }
-
 
   /* left side bar styling */
 
@@ -324,14 +266,8 @@ i{
    scrollbar-color: transparent transparent;
   }
 
-  .rightSideBar{
-    width:12%;
-    /* border:2px red solid; */
-    height:650px;
-  }
-
   .mainContainer{
-    width:76%;
+    width:85%;
     height: 650px;
     /* border:2px red solid; */
     overflow-y: scroll;
@@ -352,11 +288,11 @@ i{
   }
   .main-pages{
     margin-top: 20px;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-content: center;
-    /* justify-content: space-around; */
+    justify-content: space-around;
   }
   .leftSideBar button{
     margin-bottom: 20px;
