@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    margin: 12px 30px;
+}
+.menu-icon:hover{
+    color:red;
+}
+.navbar-brand:hover{
+    cursor: pointer;
+}
+
+i{
+    font-size: 20px;
+}
+
+/* /* search bar styling */
+.searchBar{
+    width:500px;
+    height:35px;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+#seacrhButton{
+    background-color: white;
+    border: none;
+    margin-left: -30px;
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+
+}
+#seacrhButton:hover{
+    color: red;
+}
+.searchHoverText{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black; 
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+#seacrhButton:hover .searchHoverText{
+    visibility: visible;
+    opacity: 1;
+}
+
+#micButton{
+    background-color: white;
+    border: none;
+    margin-left: 70px;
+    /* margin-right: 500px; */
+    position: relative;
+    cursor: pointer;
+}
+#micButton:hover{
+    color:red;
+}
+.micHoverText{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    width:200px;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black; 
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+#micButton:hover .micHoverText{
+    visibility: visible;
+    opacity: 1;
+}
+#navbarCreateButton{
+    background-color: white;
+    border: none;
+    position: relative;
+    /* margin-right: 20px; */
+}
+.navbarCreateHoverText{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    width:200px;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black; 
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+#navbarCreateButton:hover .navbarCreateHoverText{
+    visibility: visible;
+    opacity: 1;
+}
+
+#notificationButton{
+    background-color: white;
+    border: none;
+    position: relative;
+    /* margin-right: 20px; */
+}
+.notificationHoverText{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    width:200px;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black; 
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+#notificationButton:hover .notificationHoverText{
+    visibility: visible;
+    opacity: 1;
+}
+
+#profileButton{
+    background-color: white;
+    border: none;
+    margin-right: 50px;
+    position: relative;
+}
+.profileButtonHoverText{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    width:200px;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black; 
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+#profileButton:hover .profileButtonHoverText{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* main content styling */
+  
+#videoContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:40px 20px;
+    padding: 50px;
+}
+#videoContainer > div {
+    height:250px;
+    /* border:2px blue solid; */
+}
+.title{
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+}
+#videoContainer > div > img{
+    height:200px;
+    width:100%;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+#videoContainer > div > img:hover{
+    transform: scaleX(1.08);
+}
+.channelName, .viewsCount{
+    color:red;
+    margin-top: -20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+#videoContainer > div > b{
+    position: absolute;
+    background-color: black;
+    padding: 5px;
+    color: white;
+   left: 50px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+  
+  
+  
