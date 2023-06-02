@@ -106,15 +106,14 @@ async function fetchStats(videoId){
 function navigateToVideo(videoId){
 
     // http://127.0.0.1:5500/video.html
-    let path = "video.html";
+    let path = "/video.html";
     document.cookie = `video_id=${videoId}; path=${path}`;
 
     if(videoId){
         let linkItem = document.createElement("a");
-        linkItem.href = "video.html";
+        linkItem.href = "./video.html";
         // linkItem.target = "_blank";
         linkItem.click();
-        // window.location.href = "http://127.0.0.1:5500/video.html"
     }else{
         alert("Go and Watch a video on youtube");
     }
