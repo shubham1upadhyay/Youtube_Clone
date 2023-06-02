@@ -7,7 +7,7 @@
     color: white ;
   }
   .root-container {
-    margin-top:100px;
+    margin-top:30px;
     display: grid;
     grid-template-columns: 5fr 2fr;
   }
@@ -111,4 +111,19 @@
 }
 .video-Container {
     padding-left: 50px;
+}
+
+@media screen and (max-width:768px) {
+    #play{
+        width:400px;
+        height:300px;
+        padding: 0px;
+        margin-left: -40px;
+    }
+    .root-container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        width:80%;
+    }
 }

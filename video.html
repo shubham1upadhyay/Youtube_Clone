@@ -22,64 +22,63 @@
   </head>
   <body>
 
-     <!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-body-light" id="navbar">
-    <div class="container-fluid">
-
-        <!-- menu button -->
-        <button class="btn" type="button">
-            <div class="menu-icon">
-                <i onclick="alert('Feature not supported yet, please come back later !')"
-                type="button"
-                class="fas fa-bars"></i>
-            </div>
-        </button>
-
-        <!-- brand logo -->
-      <a class="navbar-brand" href="#">
-        <img src="img/brand_logo.JPG" alt="logo-image" />
-      </a>
-
-      <!-- search -->
-      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-
-        <input class="searchBar border-danger mx-5" type="text" name="searchBar" id="searchBar">
-        <button class="searchButton" onclick="searchVideos()" id="seacrhButton" value="search"><i class="fas fa-search"></i>
-        <span class="searchHoverText">Search</span>
-        </button>
-
-
-          <!-- <input class="form-control w-50 border-1 border-danger" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn searchButton" onclick="searchVideos()" id="seacrhButton"><i class="fas fa-search"></i> -->
+    
+        <!-- navbar -->
+        <nav>
+          <div class="navbar">
+             
+            <!-- menu icons -->
+            <button class="btn" type="button">
+              <div class="menu-icon">
+                  <i onclick="alert('Feature not supported yet, please come back later !')"
+                  type="button"
+                  class="fas fa-bars"></i>
+              </div>
+          </button>
+      
+          <!-- brand logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/brand_logo.JPG" alt="logo-image" />
+        </a>
+      
+        <div class="searchNav">
+          <input class="searchBar border-danger" type="text" name="searchBar" id="searchBar" placeholder="Search">
+        </div>
+        
+        <div class="searchBtns">
+          <button class="searchButton" onclick="searchVideos()" id="seacrhButton" value="search"><i class="fas fa-search"></i>
             <span class="searchHoverText">Search</span>
-            </button>
-
-            <button class="btn mx-5 micButton" id="micButton" onclick="alert('Feature not supported yet, please come back later !')"><i class="fas fa-microphone"></i>
+          </button>
+              <button class="btn mx-5 micButton" id="micButton" onclick="alert('Feature not supported yet, please come back later !')"><i class="fas fa-microphone"></i>
                 <span class="micHoverText">Search with your voice</span>
-            </button>
-
-                <button id="navbarCreateButton" class="btn mx-5 navbarCreateButton" onclick="alert('Feature not supported yet, please come back later !')"><i class="fab fa-youtube create-icon"></i>
+              </button>
+        </div>
+      
+                <div class="navRightBtn">
+                  <button id="navbarCreateButton" class="btn mx-3 navbarCreateButton" onclick="alert('Feature not supported yet, please come back later !')"><i class="fab fa-youtube create-icon"></i>
                     <span class="navbarCreateHoverText">Create</span>
-                </button>
-        
-                <button id="notificationButton" class="btn mx-5 notificationButton" onclick="alert('Feature not supported yet, please come back later !')"> <i class="fas fa-bell notification-icon"></i>
+                  </button>
+          
+                  <button id="notificationButton" class="btn mx-3 notificationButton" onclick="alert('Feature not supported yet, please come back later !')"> <i class="fas fa-bell notification-icon"></i>
+                    
                     <span class="notificationHoverText">Notifications</span>
+                  </button>
+          
+                  <!-- <button id="profileButton" class="btn mx-3 profileButton" onclick="alert('Feature not supported yet, please come back later !')"> -->
+                    <!-- <i class="fa fa-user"></i> -->
+                  
+                    <!-- <span class="profileButtonHoverText">Profile</span> -->
+                  <!-- </button> -->
+                </div>
+                <button class="profileImg">
+                  <img src="img/IMG_20230522_153127_447.jpg" alt="">
+                  <span class="profileImgHoverText">Profile</span>
                 </button>
-        
-                <button id="profileButton" class="btn mx-5 profileButton" onclick="alert('Feature not supported yet, please come back later !')">
-                  <i class="fa fa-user"></i>
-                    <span class="profileButtonHoverText">Profile</span>
-                </button>
-            
-      </div>
-
-      <!-- toggler button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-
+      
+      
+          </div>
+        </nav>
+     
 
     <section class="root-container">
         <div class="video-Container">
