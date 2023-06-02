@@ -33,8 +33,7 @@ i{
 #seacrhButton{
     background-color: white;
     border: none;
-    margin-left: -30px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     position: relative;
     cursor: pointer;
 
@@ -63,8 +62,6 @@ i{
 #micButton{
     background-color: white;
     border: none;
-    margin-left: 70px;
-    /* margin-right: 500px; */
     position: relative;
     cursor: pointer;
 }
@@ -118,6 +115,7 @@ i{
     background-color: white;
     border: none;
     position: relative;
+    float: right;
     /* margin-right: 20px; */
 }
 .notificationHoverText{
@@ -142,14 +140,12 @@ i{
 #profileButton{
     background-color: white;
     border: none;
-    margin-right: 50px;
     position: relative;
 }
 .profileButtonHoverText{
     position: absolute;
     top: calc(100% + 5px);
     left: 50%;
-    width:200px;
     transform: translateX(-50%);
     background-color: white;
     color: black; 
@@ -163,19 +159,26 @@ i{
     visibility: visible;
     opacity: 1;
 }
+#profileButton img{
+    width:7%;
+    border-radius: 50%;
+    float: right;
+}
 
 
 /* main content styling */
+
+ 
   
 #videoContainer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:40px 20px;
-    padding: 50px;
+    gap:60px 20px;
+    padding:20px 5px;
+    margin-left: 100px;
 }
 #videoContainer > div {
-    height:250px;
-    /* border:2px blue solid; */
+    height:270px;
 }
 .title{
     font-size: 14px;
@@ -198,15 +201,175 @@ i{
     font-weight: 600;
     font-size: 14px;
 }
-#videoContainer > div > b{
+/* #videoContainer > div > b{
     position: absolute;
     background-color: black;
     padding: 5px;
     color: white;
-   left: 50px;
+    left: 225px;
     border-radius: 5px;
     font-size: 10px;
-}
+} */
   
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    left:0px;
+  }
   
+  .navbar-brand a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-nav li {
+    margin: 0 10px;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .toggle-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .toggle-icon:before,
+  .toggle-icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-icon:before {
+    transform: translateY(-6px);
+  }
+  
+  .toggle-icon:after {
+    transform: translateY(6px);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .navbar-nav {
+      flex-direction: column;
+    }
+    
+    .navbar-nav li {
+      margin: 10px 0;
+    }
+    
+    .navbar-toggle {
+      display: block;
+    }
+    
+    .toggle-icon {
+      background-color: transparent;
+    }
+    
+    .toggle-icon:before {
+      transform: translateY(0) rotate(45deg);
+    }
+    
+    .toggle-icon:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+
+
+  /* left side bar styling */
+
+  .leftSideBar{
+    width:12%;
+    height:650px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+   scrollbar-color: transparent transparent;
+  }
+
+  .rightSideBar{
+    width:12%;
+    /* border:2px red solid; */
+    height:650px;
+  }
+
+  .mainContainer{
+    width:76%;
+    height: 650px;
+    /* border:2px red solid; */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+   scrollbar-color: transparent transparent;
+  }
+
+  .mainContainer::-webkit-scrollbar, .leftSideBar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .mainContainer::-webkit-scrollbar-track, .leftSideBar::-webkit-scrollbar-track{
+    background-color: transparent; 
+  }
+  
+  .container::-webkit-scrollbar-thumb, .leftSideBar::-webkit-scrollbar-thumb{
+    background-color: transparent;
+  }
+  .main-pages{
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    /* justify-content: space-around; */
+  }
+  .leftSideBar button{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding:10px;
+    border: none;
+    font-weight: 500;
+    background-color: white;
+  }
+  .leftSideBar button:hover{
+    background-color: lightgray;
+    border-radius: 10px;
+   
+  }
   

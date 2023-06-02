@@ -5,8 +5,9 @@ const videoContainer = document.getElementById("videoContainer");
 // endpoint
 // https://youtube.googleapis.com/youtube/v3/serach?part=snippet,
 // statistics&maxResult=1&q=mycodeschool&key=(myapikey)
-
 // https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResult=2&q=cats&key=AIzaSyDA-OAXPNXvgwW-9iZVRoICyxIRWNoO1h8
+
+
 
 function searchVideos()
 {
@@ -19,7 +20,7 @@ function searchVideos()
 async function fetchVideos(searchValue){
     // api call
     let endPoint = `https://youtube.googleapis.com/youtube/v3/search?part=
-    snippet&maxResults=20&q=${searchValue}&key=${apiKey}`
+    snippet&maxResults=40&q=${searchValue}&key=${apiKey}`
 
     try{
       let response = await fetch(endPoint);
