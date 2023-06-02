@@ -217,6 +217,11 @@ border-radius: 50%;
   .leftSideBar{
     display: none;
   }
+
+  #videoContainer > div{
+  margin-left: -80px;
+  }
+
 }
 
 #videoContainer > div {
