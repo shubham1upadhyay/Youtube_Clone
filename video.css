@@ -1,5 +1,5 @@
 *{
-    margin: 0 ;
+    /* margin: 0 ; */
     font-family: "Poppins", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -7,10 +7,11 @@
     color: white ;
   }
   .root-container {
-    /* background-color: white; */
+    margin-top:100px;
     display: grid;
     grid-template-columns: 5fr 2fr;
   }
+  
   #comments-container{
    background-color: black;
    border-radius: 10px;
