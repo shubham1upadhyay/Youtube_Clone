@@ -20,8 +20,8 @@ function onLoadScript() {
         }
       }
     });
-    const playFrame = document.getElementById("play_frame");
-    playFrame.src=`https://www.youtube.com/embed/${videoId}`;
+    // const playFrame = document.getElementById("play_frame");
+    // playFrame.src=`https://www.youtube.com/embed/${videoId}`;
   }
 }
 

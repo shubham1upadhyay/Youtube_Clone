@@ -223,7 +223,17 @@ border-radius: 50%;
   }
 
 }
-
+.hidden{
+  display:none;
+}
+#text{
+  margin: 200px;
+    width:800px;
+    color:red;
+    background-color: yellow;
+    padding:8px;
+    border-radius: 5px;
+}
 #videoContainer > div {
   /* border:1px red solid; */
   width:380px;

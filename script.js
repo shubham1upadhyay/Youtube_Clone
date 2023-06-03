@@ -8,7 +8,18 @@ const videoContainer = document.getElementById("videoContainer");
 // statistics&maxResult=1&q=mycodeschool&key=(myapikey)
 // https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResult=2&q=cats&key=AIzaSyDA-OAXPNXvgwW-9iZVRoICyxIRWNoO1h8
 
+// default function which is used to display random videos once the page load
 
+window.addEventListener('load', ()=> {
+    var text = document.getElementById("text");
+    function display(){
+        text.classList.add("hidden");
+        videoContainer.classList.remove("hidden");
+        searchVideos();
+    }
+    
+    setTimeout(display, 3000);
+})
 
 function searchVideos()
 {
