@@ -96,7 +96,7 @@ function renderComments(commentsList) {
         let commentElement = document.createElement("div");
         commentElement.className = "comment" ;
         commentElement.innerHTML = `
-                <img src="${topLevelComment.snippet.authorProfileImageUrl}" alt="">
+                <img src="${topLevelComment.snippet.authorProfileImageUrl}" alt="image">
                 <div class="comment-right-half">
                     <b>${topLevelComment.snippet.authorDisplayName
                     }</b>
