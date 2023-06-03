@@ -106,7 +106,6 @@ async function fetchStats(videoId){
 }
 
 function navigateToVideo(videoId){
-
     // http://127.0.0.1:5500/video.html
     let path = "/video.html";
     document.cookie = `video_id=${videoId}; path=${path}`;
