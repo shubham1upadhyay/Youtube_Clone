@@ -37,13 +37,12 @@ async function extractVideoDetails(videoId){
         renderComments(result.items);
     }
     catch(error){
-        console.log(`Error occured`, error)
+        console.log( error)
     }
     
 }
 
-async function  fetchStats(videoId){
-    console.log("Inside fetchStats")
+async function fetchStats(videoId){
     let endpoint = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&key=${apiKey}&id=${videoId}`;
     try {
         const response = await fetch(endpoint);
