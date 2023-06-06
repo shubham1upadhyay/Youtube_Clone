@@ -126,4 +126,9 @@
         /* justify-content: space-around; */
         width:80%;
     }
+    #comments-container{
+        width:125%;
+        justify-content: center;
+        align-items: center;
+    }
 }

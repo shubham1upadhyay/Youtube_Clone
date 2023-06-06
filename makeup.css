@@ -187,19 +187,6 @@ width: 50px;
 border-radius: 50%;
 }
 
-@media screen and (max-width:768px) {
-  .searchBar{
-      width:90%;
-  }
-
-  #text{
-    margin: 0px;
-    font-size: 8px;
-    text-align: center;
-  }
-}
-
-
 
 
 
@@ -227,13 +214,27 @@ border-radius: 50%;
   #videoContainer > div{
   margin-left: -80px;
   }
+  #micButton, #navbarCreateButton, #notificationButton, .profileImg{
+    display:none;
+  }
+  .searchBar{
+    width:200%;
+  }
+  .searchButton{
+    float: right;
+    margin: 0px;
+    margin-left: 150px;
+  }
+  #text{
+   display: none;
+  }
 
 }
 .hidden{
   display:none;
 }
 #text{
-  margin: 200px;
+    margin: 200px;
     width:800px;
     color:red;
     background-color: yellow;
@@ -279,13 +280,7 @@ border-radius: 50%;
 
   /* left side bar styling */
 
-  .leftSideBar{
-    width:14%;
-    height:650px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-   scrollbar-color: transparent transparent;
-  }
+
 
   .mainContainer{
     width:85%;
@@ -308,10 +303,7 @@ border-radius: 50%;
     background-color: transparent;
   }
   .main-pages{
-    margin-top: 20px;
-    /* flex-wrap: nowrap; */
     display: flex;
-    /* flex-direction: row; */
     align-content: center;
     justify-content: space-around;
   }
@@ -326,6 +318,5 @@ border-radius: 50%;
   .leftSideBar button:hover{
     background-color: lightgray;
     border-radius: 10px;
-   
   }
   
